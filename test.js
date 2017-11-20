@@ -3,6 +3,22 @@
    const should = chai.should();
 	
 describe("words()",()=> {
+   it("check for string", function() {
+    let value ="Argument must be a String";
+    let arg=[3,4,5];
+    expect(words(arg)).to.deep.equal(value);
+  });
+  it("check for object", function() {
+    let value ="Argument must be a String";
+    let obj={one:1,four:4,five:5};
+    expect(words(obj)).to.deep.equal(value);
+  });
+  it("check for number", function() {
+     let value="Argument must be a String";
+    let num=23;
+    expect(words(num)).to.deep.equal(value);
+  });
+ 
  
   it("counts one word", ()=> {
     

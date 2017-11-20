@@ -1,8 +1,8 @@
 
 
-	let words =(sentence)=>
+	let words = (sentence) =>
 	{
-		if(sentence instanceof String){
+		if(typeof sentence === 'string'){
 			
 		
 		let sentence2= sentence.replace(/[ ][ ]*/g, ' '); //this is an expresion that changes any instance of [ ][ ]*/ to space 
@@ -24,13 +24,14 @@
 				obj[string_array[i]] = 1
 			}
 		}
+		return obj;
 		}else{
 			 return "Argument must be a String";
 		}
-		return obj; // returns the object
+		 
 	}
 	
-	console.log(words([1,2,4]));
+	console.log(words("Habib is habib fish is fish"));
 	export default words;  // export words
 
 
