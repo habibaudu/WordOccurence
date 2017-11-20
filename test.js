@@ -2,8 +2,8 @@
    import words from './app/wordocurrence.js';
    const should = chai.should();
 	
-describe("words()", function() {
-  it("counts one word", function() {
+describe("words()",()=> {
+  it("counts one word", ()=> {
     
     expect(words("word")).to.deep.equal({ word: 1 });
   });
