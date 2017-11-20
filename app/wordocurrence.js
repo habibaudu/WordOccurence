@@ -1,12 +1,12 @@
 
 
-	let words = (sentence) =>
+	const words = (sentence) =>
 	{
 		if(typeof sentence === 'string'){
 			
 		
-		let sentence2= sentence.replace(/[ ][ ]*/g, ' '); //this is an expresion that changes any instance of [ ][ ]*/ to space 
-		let string_array = sentence2.split(" ");  //split the sentence returning an array
+		const sentence2= sentence.replace(/[ ][ ]*/g, ' '); //this is an expresion that changes any instance of [ ][ ]*/ to space 
+		const string_array = sentence2.split(" ");  //split the sentence returning an array
 	
 		let obj ={};
 		
@@ -31,7 +31,7 @@
 		 
 	}
 	
-	console.log(words("Habib is habib fish is fish"));
+	console.log(words(""));
 	export default words;  // export words
 
 

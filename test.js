@@ -13,6 +13,12 @@ describe("words()",()=> {
     let obj={one:1,four:4,five:5};
     expect(words(obj)).to.deep.equal(value);
   });
+
+  it("check for empt string", function() {
+    let value ={ "": 1 };
+    
+    expect(words('')).to.deep.equal(value);
+  });
   it("check for number", function() {
      let value="Argument must be a String";
     let num=23;
