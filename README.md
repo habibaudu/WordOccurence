@@ -1,0 +1,2 @@
+## wordOcurence
+## A function called words that takes ina s string as argument and counts the Occurence of each word in the string.. the function should return a json object showing the word identified and their occurence.
